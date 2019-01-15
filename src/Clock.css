@@ -1,8 +1,5 @@
 .clock {
-    left: 0;
-    margin:-100px auto;
-    top:50%;
-    width: 100%;
+    margin-top:20vh;
     text-align:center;
     font-size:100px;
     color:rgb(61, 64, 90);
