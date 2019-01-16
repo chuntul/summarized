@@ -5,10 +5,12 @@ class Todo extends Component {
   render() {
     return (
         <div className="todo">
-            <ul>
-                <li>1 thing</li>
-                <li>2 thing</li>
-            </ul>
+            <div className="container">
+                <form onSubmit={this.props.addTask}>
+                    <input placeholder="Task" />
+                    <button type="submit"> Add Task </button>
+                </form>
+            </div>
         </div>
     
     );

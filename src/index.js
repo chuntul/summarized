@@ -9,7 +9,7 @@ import * as serviceWorker from './serviceWorker';
 ReactDOM.render(
     <div>
         <Clock/>
-        <Todo/>
+        <Todo addTask={this.addTask}/>
     </div>, 
     document.getElementById('root')
 );

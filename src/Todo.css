@@ -10,11 +10,35 @@ ul {
     margin:0;
     display: inline-block;
     text-align:left;
-    width: 90px;
+    width: 50vw;
 }
+
 ul li {
     padding-left:8px;
     margin-bottom:6px;
-    text-align: center;
-    text-indent: -12px;
+    text-align: left;
+    text-indent: 0px;
+}
+
+button:focus, input:focus {
+    outline:0;
+}
+
+input {
+    border:1px solid rgb(61, 64, 90);
+    background:transparent;
+    width:450px;
+    margin-right:20px;
+    padding:10px;
+}
+
+button {
+    border:1px solid rgb(61, 64, 90);
+    background:transparent;
+    color:rgb(61, 64, 90);
+    padding:10px 15px;
+}
+
+button:hover {
+    cursor:pointer;
 }
