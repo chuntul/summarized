@@ -1,4 +1,4 @@
-.todo {
+.todo-container {
     margin-top:10vh;
     text-align:center;
     font-size:30px;
@@ -25,7 +25,8 @@ button:focus, input:focus {
 }
 
 input {
-    border:1px solid rgb(61, 64, 90);
+    border:none;
+    border-bottom:1px solid rgb(61, 64, 90);
     background:transparent;
     width:450px;
     margin-right:20px;
@@ -34,8 +35,8 @@ input {
 
 button {
     border:1px solid rgb(61, 64, 90);
-    background:transparent;
-    color:rgb(61, 64, 90);
+    background:rgb(61, 64, 90);
+    color:white;
     padding:10px 15px;
 }
 
