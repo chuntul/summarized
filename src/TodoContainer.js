@@ -16,7 +16,10 @@ export default class TodoContainer extends Component {
     }
 
     onSubmit = (event) => {
+        // prevent from refreshing 
         event.preventDefault();
+
+        // reset term
         this.setState({
             term: '',
             items: [...this.state.items, this.state.term]
@@ -27,10 +30,13 @@ export default class TodoContainer extends Component {
         return (
         <div>
             <form className="todo-container" onSubmit={this.onSubmit}>
-                <input value={this.state.term} onChange={this.onChange} />
+                <input placeholder="Add a Task" value={this.state.term} onChange={this.onChange} />
                 <button>Submit</button>
             </form>
-            <TodoList items={this.state.items} />
+            <div className="todolist">
+                <TodoList items={this.state.items} />
+            </div>
+           
         </div>
         );
     }
