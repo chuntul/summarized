@@ -9,6 +9,8 @@ export default class TodoContainer extends Component {
             term: '',
             items: []
         };
+
+        this.deleteTodo = this.deleteTodo.bind(this)
     }
 
     onChange = (event) => {
@@ -22,7 +24,13 @@ export default class TodoContainer extends Component {
         // reset term
         this.setState({
             term: '',
-            items: [...this.state.items, this.state.term]
+            items: [...this.state.items, this.state.term] // binding the term to the array of items
+        });
+    }
+
+    deleteTodo(text) {
+        this.setState({
+            items: this.state.items.filter(t => t != text)
         });
     }
 
@@ -34,7 +42,7 @@ export default class TodoContainer extends Component {
                 <button>Submit</button>
             </form>
             <div className="todolist">
-                <TodoList items={this.state.items} />
+                <TodoList items={this.state.items} deleteTodo={this.deleteTodo} /> 
             </div>
            
         </div>
