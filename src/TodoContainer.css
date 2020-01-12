@@ -1,3 +1,4 @@
+
 .todo-container {
     margin-top:10vh;
     text-align:center;
@@ -5,17 +6,10 @@
     color:rgb(61, 64, 90);
 }
 
-.todo {
-    margin-top:10vh;
-    text-align:center;
-    font-size:30px;
-    color:rgb(61, 64, 90);
-}
-
-.todolist-container {
-    margin:0 auto;
-    display:inline-block;
-    width:100%;
+.todolist {
+    margin:40px auto;
+    font-size:20px;
+    width:50%;
 }
 
 ul {
@@ -24,13 +18,17 @@ ul {
     display: inline-block;
     text-align:left;
     width: 50vw;
+    height:30vh;
+    overflow-y:auto;
+    
 }
 
 ul li {
-    padding-left:8px;
+    padding: 0px 0px 3px 8px;
     margin-bottom:6px;
-    text-align: center !important;
+    text-align: left;
     text-indent: 0px;
+    border-bottom:1px solid rgb(139, 142, 170);
 }
 
 button:focus, input:focus {
