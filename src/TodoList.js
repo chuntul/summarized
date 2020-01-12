@@ -1,7 +1,7 @@
 import React from 'react';
 import './TodoContainer.css'
 
-const TodoList = props => (
+const TodoList = (props) => (
   <ul>
     {
       props.items.map((item, index) => <li key={index}>{item}</li>)

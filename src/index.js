@@ -2,14 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Clock from './Clock';
-import Todo from './Todo';
+import TodoContainer from './TodoContainer';
 import * as serviceWorker from './serviceWorker';
 
 
 ReactDOM.render(
     <div>
         <Clock/>
-        <Todo addTask={this.addTask}/>
+        <TodoContainer/>
     </div>, 
     document.getElementById('root')
 );
